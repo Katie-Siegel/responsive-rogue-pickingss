@@ -88,7 +88,7 @@ header nav ul li {
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 10px 0px;
+  padding: 10px 10px;
   width: 100%;
 }
 
@@ -134,13 +134,13 @@ header nav ul li a {
 .section-one {
   /* width: 29%; */
   width: 100%;
-  border-bottom: solid 5px #77a466;
+  border-bottom: solid 5px 0px 0px 0px #77a466;
 }
 
 .section-two {
   /* width: 42%; */
   width: 100%;
-  border-bottom: solid 5px #77a466;
+  border-bottom: solid 5px 0px 0px 0px #77a466;
 }
 
 .section-three {
@@ -176,4 +176,63 @@ footer span {
   text-transform: lowercase;
   color: #45610e;
   font-size: 0.875rem;
+}
+
+/********** BREAKPOINT STYLES *********/
+@media all and (min-width: 768px) {
+  /*Tablet styles here*/
+  .bottom-section .content-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .section-one {
+    /* width: 29%; */
+    width: 30%;
+    border-right: solid 5px #77a466;
+  }
+
+  .section-two {
+    /* width: 42%; */
+    width: 30%;
+    padding: 0px 30px;
+    border-right: solid 5px #77a466;
+  }
+
+  .section-three {
+    /* width: 29%; */
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+        
+        /*Desktop styles here*/
+  
+        body {
+    font-size: 1em;
+    }
+
+  header .content-wrapper{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  header h1 {
+   width: 30%;
+   padding: 0;
+   border-bottom: none ;
+   text-align: left;
+  }
+
+  header nav {
+    /* float: right; */
+    width 21%
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
